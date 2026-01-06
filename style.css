@@ -56,13 +56,13 @@ body {
 }
 
 .loader-text {
-    color: var(--dark); /* White background par dark text zyada accha lagega */
-    letter-spacing: 4px;
-    font-size: 15px;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
 }
-
 @keyframes logoFloat {
     0%, 100% { transform: translateY(0) scale(1); }
     50% { transform: translateY(-10px) scale(1.05); }
