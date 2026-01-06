@@ -1,4 +1,3 @@
-
 :root {
     --gold: #b39359;
     --dark: #121212;
@@ -80,13 +79,28 @@ header {
     z-index: 900;
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-.brand-container { display: flex; align-items: center; gap: 12px; }
+/* HEADER UPDATED */
+.brand-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    flex-direction: row; /* Ensure logo is on the left */
+}
+
+.header-logo { 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    border: 1px solid var(--gold);
+    order: 1; /* Logo pehle */
+}
+
 .brand-text {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 800;
+    order: 2; /* Name baad mein */
 }
-.header-logo { width: 35px; height: 35px; border-radius: 50%; border: 1px solid var(--gold); }
 
 nav a { text-decoration: none; color: var(--dark); font-size: 13px; font-weight: 600; text-transform: uppercase; margin-left: 25px; }
 
