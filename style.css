@@ -4,6 +4,7 @@
     --light: #fdfcf9;
     --glass: rgba(255, 255, 255, 0.8);
 }
+
 * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -30,27 +31,28 @@ body {
 }
 
 /* Logo aur Text ke piche ka white circle */
-/* UPDATED LOADER SECTION - Circle Hatane ke liye */
 .loader-content {
-    background: transparent; /* White background hata diya */
-    width: auto;
-    height: auto;
-    border-radius: 0; /* Circle shape khatam */
+    background: #ffffff; /* Pure White Background */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Circle shape */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: none; /* Shadow bhi hata di */
-    padding: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Thoda depth ke liye */
+    padding: 20px;
 }
 
-#loader img {
-    width: 120px; /* Size aap apne hisaab se set karein */
-    height: auto;
-    border-radius: 0; /* Logo ki round shape hatane ke liye */
+/* Is section ko update karein */
+.loader img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-bottom: 15px;
-    border: none; /* Gold border hatane ke liye */
+    /* border: 2px solid var(--gold); <--- Yeh line hata di gayi hai */
     animation: logoFloat 2s ease-in-out infinite;
+}
 }
 
 .loader-text {
@@ -87,11 +89,14 @@ header {
     flex-direction: row; /* Ensure logo is on the left */
 }
 
+/* HEADER UPDATED */
 .header-logo { 
     width: 35px; 
-    height: auto; 
-    border-radius: 0; /* Round shape hata di */
-    border: none;    /* Border hata di */
+    height: 35px; 
+    border-radius: 50%; 
+    /* border: 1px solid var(--gold); <--- Is line ko delete kar dein */
+    order: 1; /* Logo pehle */
+    object-fit: cover; /* Isse logo stretch nahi hoga */
 }
 
 .brand-text {
