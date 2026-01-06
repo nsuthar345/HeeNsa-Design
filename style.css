@@ -45,7 +45,7 @@ body {
 }
 
 /* Is section ko update karein */
-.loader img {
+#loader img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
